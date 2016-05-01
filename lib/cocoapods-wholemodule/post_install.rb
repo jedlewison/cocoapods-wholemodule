@@ -1,8 +1,8 @@
 require 'cocoapods-core'
 
-module CocoaPodsSwiftOptimize
+module CocoaPodsWholeModule
 	
-	Pod::HooksManager.register('cocoapods-swiftoptimize', :post_install) do |installer, options|
+	Pod::HooksManager.register('cocoapods-wholemodule', :post_install) do |installer, options|
 		whole_module_configs = ['Release']
 		if options[:wholemodule].is_a?(Array)
 			whole_module_configs = options[:wholemodule]

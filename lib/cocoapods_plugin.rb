@@ -1,1 +1,1 @@
-require 'cocoapods-swiftoptimize/post_install.rb'
+require 'cocoapods-wholemodule/post_install.rb'
