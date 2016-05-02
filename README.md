@@ -33,7 +33,7 @@ Now, for configurations named `CustomRelease`, your Swift files will automatical
 To specify multiple configuration names, supply an array of names:
 
 ```ruby
-plugin 'cocoapods-wholemodule', :wholemodule => 'CustomRelease, SpecialName]'
+plugin 'cocoapods-wholemodule', :wholemodule => ['CustomRelease', 'SpecialName']
 ```
 
 Now, for configurations named `CustomRelease` and `SpecialName`, your Swift files will automatically be compiled with Whole Module Optimization enabled.
