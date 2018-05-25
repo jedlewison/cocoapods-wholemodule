@@ -13,9 +13,9 @@ module CocoaPodsWholeModule
 		installer.pods_project.targets.each do |target|
 			target.build_configurations.each do |config|
 				if whole_module_configs.include?(config.name)
-					config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
+					config.build_settings['SWIFT_COMPILATION_MODE'] = 'wholemodule'
 				else
-					config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'
+					config.build_settings['SWIFT_COMPILATION_MODE'] = 'singlefile'
 				end
 			end
 		end
